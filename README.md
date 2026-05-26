@@ -134,10 +134,26 @@ Marts criados:
 
 ## Metabase
 
-Depois de gerar o DuckDB, suba o Metabase:
+Para abrir os dashboards locais, e necessario ter:
+
+- `metabase.jar`
+- driver DuckDB do Metabase em uma pasta `plugins/`
+
+O projeto ja versiona o banco interno do Metabase em `data/metabase-app-db/`, entao os dashboards salvos devem aparecer ao subir o Metabase apontando para esse app-db.
+
+Depois de gerar o DuckDB, suba o Metabase informando os caminhos:
 
 ```powershell
 .\scripts\start_metabase_case.ps1 -MetabaseJar "C:\caminho\metabase.jar" -PluginsDir "C:\caminho\plugins"
+```
+
+Outra opcao e configurar as variaveis de ambiente e rodar o script sem parametros:
+
+```powershell
+$env:METABASE_JAR="C:\caminho\metabase.jar"
+$env:METABASE_PLUGINS_DIR="C:\caminho\plugins"
+
+.\scripts\start_metabase_case.ps1
 ```
 
 Depois acesse:
@@ -145,8 +161,6 @@ Depois acesse:
 ```text
 http://localhost:3000
 ```
-
-Os dashboards ja ficam salvos no banco interno do Metabase em `data/metabase-app-db/`.
 
 Credenciais locais:
 
