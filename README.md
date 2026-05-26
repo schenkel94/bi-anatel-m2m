@@ -140,6 +140,14 @@ Depois de gerar o DuckDB, suba o Metabase:
 .\scripts\start_metabase_case.ps1 -MetabaseJar "C:\caminho\metabase.jar" -PluginsDir "C:\caminho\plugins"
 ```
 
+Depois acesse:
+
+```text
+http://localhost:3000
+```
+
+Os dashboards ja ficam salvos no banco interno do Metabase em `data/metabase-app-db/`.
+
 Credenciais locais:
 
 ```text
