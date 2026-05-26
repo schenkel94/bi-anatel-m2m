@@ -3,8 +3,6 @@
 # Mário Schenkel
 ### Data Analyst | Analytics Engineer
 
-Transformo dados complexos em **insights estratégicos** para impulsionar decisões de negócio.
-
 <p align="center">
   <a href="https://schenkel94.github.io/portfolio/">
     <img src="https://img.shields.io/badge/🌐 Portfólio-000?style=for-the-badge&logo=google-chrome&logoColor=white" />
